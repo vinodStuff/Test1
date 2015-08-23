@@ -1,9 +1,9 @@
-<project name="AntJavaProject" default="test" basedir=".">
+<project name="HelloWorld" default="test" basedir=".">
 	<description>
 		Create a Java Project (JAR) with Ant build script
 	</description>
 
-	<property name="projectName" value="DateUtils" />
+	<property name="projectName" value="Hello" />
 	
 	<!-- Java sources -->
 	<property name="src.dir" location="src" />
@@ -35,7 +35,7 @@
 		<jar jarfile="${dist.dir}/${projectName}-${DSTAMP}.jar" basedir="${build.dir}" >
 		    <manifest>
 			<!-- create an executable Jar -->
-			<attribute name="Main-Class" value="com.mkyong.core.utils.DateUtils" />
+			<attribute name="Main-Class" value="com.Hello" />
 		    </manifest>
 		</jar>
 	</target>
